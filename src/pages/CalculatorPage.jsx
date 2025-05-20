@@ -389,7 +389,7 @@ export default function CalculatorPage(props) {
     var outputText = `Vocht: ${voedingswaardeLijst.totaal.hoeveelheid} ml/kg/d; 
 Calorisch: ${voedingswaardeLijst.totaal.calorieën} kcal/kg/d; 
 Glucose Intake: ${voedingswaardeLijst.totaal.koolhydraten} mg/kg/min; 
-Natrium Intake: ${voedingswaardeLijst.totaal.koolhydraten} mmol/kg/d`;
+Natrium Intake: ${voedingswaardeLijst.totaal.natrium} mmol/kg/d`;
     navigator.clipboard.writeText(outputText).then(() => {
       alert("De volgende informatie is gekopieërd:\n" + outputText);
     });
